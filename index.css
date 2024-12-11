@@ -18,9 +18,9 @@ body,
   align-items: center;
   background: #003e1f; /* Fundo verde escuro, lembrando uma floresta de pinheiros à noite */
   background-image: url("header.png"); /* Adiciona árvores cobertas de neve e um céu estrelado */
-  background-size: cover, cover;
-  background-position: center bottom, center top;
-  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: repeat;
 }
 
 .message {
