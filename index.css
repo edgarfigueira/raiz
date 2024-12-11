@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Life+Savers:wght@400;700;800&display=swap");
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+body,
+.background {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #003e1f; /* Fundo verde escuro, lembrando uma floresta de pinheiros à noite */
+  background-image: url("header.png"); /* Adiciona árvores cobertas de neve e um céu estrelado */
+  background-size: cover, cover;
+  background-position: center bottom, center top;
+  background-repeat: no-repeat, repeat;
+}
+
+.message {
+  font-family: "Life Savers", cursive; /* Fonte com estilo de luzes de neon */
+  font-size: 2.5rem;
+  font-weight: 400; /* Using the bolder weight available for Codystar */
+  color: #ffd700; /* Amarelo dourado para simular luzes de Natal */
+  text-shadow: 0 0 5px #ffffba, /* Brilho suave amarelo */ 0 0 10px #ffffba,
+    /* Brilho médio */ 0 0 20px #ffffba, /* Brilho intenso */ 0 0 30px #87c38f,
+    /* Brilho verde claro */ 0 0 40px #87c38f; /* Brilho verde mais intenso */
+  text-align: center; /* Centraliza o texto */
+}
+
+.snowflake {
+  color: #ffffff; /* Cor branca para os flocos de neve */
+  pointer-events: none; /* Permite clique através dos flocos */
+  user-select: none; /* Evita seleção do texto */
+}
+
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 999; /* Atrás dos flocos de neve, mas acima do conteúdo da página */
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center; /* Mantém os logotipos centralizados */
+  align-items: center; /* Alinha verticalmente */
+  flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha conforme necessário */
+  padding: 20px 10px; /* Espaço em torno dos logotipos para evitar aperto */
+}
+
+#logo1, #logo2, #logo3, #logo4, #logo5, #logo6 {
+  height: 60px; /* Ajuste inicial da altura dos logotipos */
+  margin: 0px 5px; /* Espaçamento adequado entre os logotipos */
+  transition: height 0.3s ease; /* Suaviza a transição de redimensionamento */
+}
+
+/* Ajustes responsivos para tamanhos de tela diferentes */
+@media (max-width: 768px) {
+  #logo1, #logo2, #logo3, #logo4, #logo5, #logo6 {
+    height: 70px; /* Reduz a altura dos logotipos em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  #logo1, #logo2, #logo3, #logo4, #logo5, #logo6 {
+    height: 60px; /* Reduz ainda mais a altura para dispositivos muito pequenos */
+  }
+}
+
