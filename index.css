@@ -60,7 +60,6 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   padding: 10px; /* Reduzido para melhor ajuste em telas menores */
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #logo1, #logo2, #logo3, #logo4, #logo5, #logo6 {
