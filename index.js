@@ -27,4 +27,4 @@ function createSnowflake() {
 }
 
 // Gera novos flocos mais frequentemente
-setInterval(createSnowflake, 650);
+setInterval(createSnowflake, 400);
