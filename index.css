@@ -3,7 +3,7 @@
 html {
   width: 100%;
   overflow-x: hidden;
-  
+  position: fixed;
 }
 
 body,
@@ -18,9 +18,9 @@ body,
   align-items: center;
   background: #003e1f; /* Fundo verde escuro, lembrando uma floresta de pinheiros à noite */
   background-image: url("header.png"); /* Adiciona árvores cobertas de neve e um céu estrelado */
-  background-size: cover;
-  background-position: center top;
-  background-repeat: repeat;
+  background-size: cover, cover;
+  background-position: center bottom, center top;
+  background-repeat: no-repeat, repeat;
 }
 
 .message {
@@ -50,6 +50,7 @@ body,
   z-index: 999; /* Atrás dos flocos de neve, mas acima do conteúdo da página */
 }
 
+
 footer {
   position: absolute;
   bottom: 0;
@@ -63,7 +64,7 @@ footer {
 }
 
 #logo1, #logo2, #logo3, #logo4, #logo5, #logo6 {
-  max-height: 10vh; /* Usa uma porcentagem da altura da tela para dimensionar os logotipos */
+  max-height: 30vh; /* Usa uma porcentagem da altura da tela para dimensionar os logotipos */
   margin: 5px; /* Espaçamento reduzido para economizar espaço */
   width: auto; /* Mantém a proporção dos logotipos */
 }
@@ -71,7 +72,7 @@ footer {
 /* Ajustes para visibilidade em dispositivos móveis */
 @media (max-width: 768px) {
   #logo1, #logo2, #logo3, #logo4, #logo5, #logo6 {
-    max-height: 8vh; /* Reduz ainda mais a altura para telas menores */
+    max-height: 17vh; /* Reduz ainda mais a altura para telas menores */
   }
 
   .message {
@@ -81,7 +82,7 @@ footer {
 
 @media (max-width: 480px) {
   #logo1, #logo2, #logo3, #logo4, #logo5, #logo6 {
-    max-height: 6vh; /* Reduz ainda mais para telas muito pequenas */
+    max-height: 15vh; /* Reduz ainda mais para telas muito pequenas */
   }
 
   .message {
